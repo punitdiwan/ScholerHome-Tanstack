@@ -1,7 +1,37 @@
 import React, { useEffect, useState } from "react";
 import { FaFacebook, FaInstagram, FaTwitter, FaLinkedin } from "react-icons/fa";
-import {  HiMail, HiPhone } from "react-icons/hi";
+import { HiMail, HiPhone } from "react-icons/hi";
 import { Link } from "@tanstack/react-router";
+
+import { Users, GraduationCap, BookOpen, Trophy } from "lucide-react";
+
+const stats = [
+    {
+        id: 1,
+        icon: Users,
+        value: "250+",
+        title: "Teachers",
+    },
+    {
+        id: 2,
+        icon: GraduationCap,
+        value: "5000+",
+        title: "Students",
+    },
+    {
+        id: 3,
+        icon: BookOpen,
+        value: "100+",
+        title: "Courses",
+    },
+    {
+        id: 4,
+        icon: Trophy,
+        value: "50+",
+        title: "Achievements",
+    },
+];
+
 interface Logo {
     id: number;
     image: string;
@@ -9,7 +39,7 @@ interface Logo {
 }
 
 const logos: Logo[] = [
-    { id: 1, image: "https://via.placeholder.com/120x60?text=Logo+1", alt: "Logo 1" },
+    { id: 1, image: "/public/Header_Logo.png", alt: "Logo 1" },
     { id: 2, image: "https://via.placeholder.com/120x60?text=Logo+2", alt: "Logo 2" },
     { id: 3, image: "https://via.placeholder.com/120x60?text=Logo+3", alt: "Logo 3" },
     { id: 4, image: "https://via.placeholder.com/120x60?text=Logo+4", alt: "Logo 4" },
@@ -42,11 +72,11 @@ export const Footer: React.FC = () => {
     return (
         <footer className="bg-secondary  text-white">
             {/* First Row */}
-            <div className="px-10 py-14 flex flex-col md:flex-row  gap-8">
+            <div className="px-8 py-6 flex flex-col md:flex-row  gap-8">
 
                 {/* Section 1: Logo Slider */}
                 <div className="">
-                    <h3 className="text-2xl font-abhaya  font-semibold mb-4">Our Partners</h3>
+                    <h3 className="text-2xl font-abhaya text-center  font-semibold mb-4">Our Partners</h3>
 
                     <div className="relative overflow-hidden w-full">
                         <div
@@ -55,18 +85,29 @@ export const Footer: React.FC = () => {
                                 transform: `translateX(-${currentIndex * 100}%)`,
                             }}
                         >
-                            {logos.map((logo) => (
-                                <div
-                                    key={logo.id}
-                                    className="min-w-full flex justify-center items-center"
-                                >
-                                    <img
-                                        src={logo.image}
-                                        alt={logo.alt}
-                                        className="h-16 object-contain"
-                                    />
-                                </div>
-                            ))}
+                            {stats.map((item) => {
+                                const Icon = item.icon;
+
+                                return (
+                                    <div
+                                        key={item.id}
+                                        className="min-w-full flex flex-col justify-center items-center gap-2"
+                                    >
+                                        {/* ICON */}
+                                        <Icon className="w-20 h-20 " />
+
+                                        {/* VALUE */}
+                                        <h3 className="text-xl font-bold text-secondary">
+                                            {item.value}
+                                        </h3>
+
+                                        {/* TITLE */}
+                                        <p className="text-md font-medium text-white/90">
+                                            {item.title}
+                                        </p>
+                                    </div>
+                                );
+                            })}
                         </div>
                     </div>
 
@@ -118,7 +159,7 @@ export const Footer: React.FC = () => {
 
                         {/* Logo */}
                         <img
-                            src="https://via.placeholder.com/60x60?text=Logo"
+                            src="/Header_Logo.png"
                             alt="School Logo"
                             className="w-14 h-14 object-contain"
                         />

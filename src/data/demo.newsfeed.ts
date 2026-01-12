@@ -109,5 +109,6 @@ const awardsData = [
     date: "September 2024",
   },
 ];
+
 return {newsFeedData,highlightsData,achievementsData,awardsData};
 })

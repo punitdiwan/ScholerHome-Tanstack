@@ -15,9 +15,9 @@ export default function Header() {
         <div className="flex h-full relative z-50">
           <Link to="/" className="block">
             <img
-              src="/sanskaar-logo.webp"
+              src="/Header_Logo.png"
               alt="scholar logo"
-              className="bg-white w-20 sm:w-22 md:w-24 lg:w-25 shadow-lg h-auto object-contain self-start"
+              className=" w-20 sm:w-22 md:w-24 lg:w-25  h-auto object-contain self-start"
             />
           </Link>
         </div>
