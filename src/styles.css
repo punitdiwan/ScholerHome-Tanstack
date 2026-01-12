@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700&display=swap');
+
+@import "tailwindcss";
+
+:root {
+  --primary-color: #FFB800;
+  --secondary-color: #1F2937;
+  --accent-color: #10B981;
+  --school-blue: #0D47A1;
+}
+
+@layer utilities {
+  .bg-primary { background-color: #007744; }
+  .bg-secondary { background-color:#333333 ;}
+  .text-primary { color: #007744; }
+  .text-school-blue { color: #0D47A1; }
+  .text-title { color: #585858}
+  .text-secondary { color: #606060}
+  .bg-school-blue {background-color: #132f57;}
+  .text-school-blue { color: #132f57;}
+  .border-light { color:#606060;}
+}
+
+body {
+  @apply m-0;
+  font-family:'Open Sans',-apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",'Abhaya Libre', cursive, 
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+@layer utilities {
+  .font-abhaya { font-family: 'Abhaya Libre', cursive; }
+}
