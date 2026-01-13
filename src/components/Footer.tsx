@@ -39,7 +39,7 @@ interface Logo {
 }
 
 const logos: Logo[] = [
-    { id: 1, image: "/public/Header_Logo.png", alt: "Logo 1" },
+    { id: 1, image: "/Header_Logo.png", alt: "Logo 1" },
     { id: 2, image: "https://via.placeholder.com/120x60?text=Logo+2", alt: "Logo 2" },
     { id: 3, image: "https://via.placeholder.com/120x60?text=Logo+3", alt: "Logo 3" },
     { id: 4, image: "https://via.placeholder.com/120x60?text=Logo+4", alt: "Logo 4" },
