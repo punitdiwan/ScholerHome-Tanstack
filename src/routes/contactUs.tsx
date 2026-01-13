@@ -50,7 +50,7 @@ function RouteComponent() {
     <>
       <ImageTitleSection
         title="Contact Us"
-        imageUrl="/images/facilities-banner.jpg"
+        imageUrl="/public/placholder/image_header_placeholder.jpg"
       />
 
       <div className="max-w-7xl mx-auto px-6 py-16">

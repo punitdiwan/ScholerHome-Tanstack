@@ -22,7 +22,7 @@ function RouteComponent() {
         <>
             <ImageTitleSection
                 title="Admissions"
-                imageUrl="/images/facilities-banner.jpg"
+                imageUrl="/public/placholder/image_header_placeholder.jpg"
             />
             <div className='px-10 py-8'>
                 <section className=" py-6 px-2 text-center"

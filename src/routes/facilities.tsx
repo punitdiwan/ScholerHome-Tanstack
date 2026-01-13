@@ -17,7 +17,7 @@ function RouteComponent() {
     <>
       <ImageTitleSection
         title="Facilities"
-        imageUrl="/images/facilities-banner.jpg"
+        imageUrl="/public/placholder/image_header_placeholder.jpg"
       />
       <section className="px-8 md:px-10 py-8 space-y-12 text-secondary">
 
@@ -77,7 +77,7 @@ function RouteComponent() {
             className="w-full h-70 object-cover rounded-lg shadow-md"
           />
           <img
-            src="/facilities/coursesofstudy.jpeg"
+            src="/public/placholder/facilities_classroom_placholder.jpg"
             alt="Classroom 2"
             className="w-full h-70 object-cover rounded-lg shadow-md"
           />
@@ -108,6 +108,11 @@ function RouteComponent() {
             alt="Classroom 2"
             className="w-full h-60 object-cover rounded-lg shadow-md"
           />
+          <img
+            src="/public/placholder/Libraray_lab_placeholder.jpg"
+            alt="Classroom 2"
+            className="w-full h-60 object-cover rounded-lg shadow-md"
+          />
         </div>
 
         {/* ===== Row 7: Laboratories ===== */}
@@ -134,7 +139,7 @@ function RouteComponent() {
             className="w-full h-60 object-cover rounded-lg shadow-md"
           />
           <img
-            src="/facilities/5.jpeg"
+            src="/public/placholder/Libraray_lab_placeholder.jpg"
             alt="Classroom 2"
             className="w-full h-60 object-cover rounded-lg shadow-md"
           />

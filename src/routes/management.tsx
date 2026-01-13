@@ -40,14 +40,14 @@ function RouteComponent() {
             {managementTeam.map((member) => (
               <div
                 key={member.id}
-                className="flex flex-col md:flex-row gap-8 bg-white border-b border-gray-200  mb-10"
+                className="flex flex-col md:flex-row gap-8 bg-white border-b border-gray-200 pb-10 mb-10"
               >
                 {/* Image */}
                 <div className="md:w-1/4 shrink-0">
                   <img
                     src={member.image}
                     alt={member.name}
-                    className="w-full h-56 object-cover rounded-lg"
+                    className="w-full h-56 object-cover rounded-lg border border-gray-300"
                   />
                 </div>
 

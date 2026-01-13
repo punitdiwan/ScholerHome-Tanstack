@@ -11,8 +11,11 @@ export const Route = createFileRoute('/co-curricular-activities')({
 
 const images = [
   "/sanskaar-i41.jpg",
+  "/public/placholder/co-curricular_slider_place.jpg",
   "/sanskaar-i46.jpg",
+  "/public/placholder/co-curricular_slider_place.jpg",
   "/sanskaar-i47.jpg",
+  "/public/placholder/co-curricular_slider_place.jpg",
   "/sanskaar-i48.jpg"
 ];
 
@@ -33,7 +36,7 @@ function RouteComponent() {
     <>
       <ImageTitleSection
         title="Co-Curricular Activities"
-        imageUrl="/images/facilities-banner.jpg"
+        imageUrl="/public/placholder/image_header_placeholder.jpg"
       />
 
       <div className="px-10 py-8 text-secondary">
@@ -93,12 +96,12 @@ function RouteComponent() {
           <UnderLine />
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-4">
             {[
-              { title: "Art & Craft", image: "/images/activities/art.jpg" },
-              { title: "Dance", image: "/images/activities/dance.jpg" },
-              { title: "Public Speaking & Debate", image: "/images/activities/debate.jpg" },
-              { title: "Drama & Theatre", image: "/images/activities/drama.jpg" },
-              { title: "Musical Activities", image: "/images/activities/music.jpg" },
-              { title: "Sports", image: "/images/activities/sports.jpg" },
+              { title: "Art & Craft", image: "/public/placholder/Activity_placeholder.jpg" },
+              { title: "Dance", image: "/public/placholder/Activity_placeholder.jpg" },
+              { title: "Public Speaking & Debate", image: "/public/placholder/Activity_placeholder.jpg" },
+              { title: "Drama & Theatre", image: "/public/placholder/Activity_placeholder.jpg" },
+              { title: "Musical Activities", image: "/public/placholder/Activity_placeholder.jpg" },
+              { title: "Sports", image: "/public/placholder/Activity_placeholder.jpg" },
             ].map((item, index) => (
               <div key={index} className="relative group overflow-hidden rounded-xl shadow-md">
                 <img

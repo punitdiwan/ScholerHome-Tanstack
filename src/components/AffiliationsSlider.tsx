@@ -8,12 +8,12 @@ interface Logo {
 }
 
 const logos: Logo[] = [
+  { id: 4, image: "/public/placholder/aflliaction_placeholder.jpg", alt: "Logo 4" },
   { id: 1, image: "/Affiliations/chevrolet.jpg", alt: "Logo 1" },
+  { id: 5, image: "/public/placholder/aflliaction_placeholder.jpg", alt: "Logo 5" },
   { id: 2, image: "/Affiliations/ford-mustang.jpg", alt: "Logo 2" },
+  { id: 6, image: "/public/placholder/aflliaction_placeholder.jpg", alt: "Logo 6" },
   { id: 3, image: "/Affiliations/porsche.jpg", alt: "Logo 3" },
-  { id: 4, image: "https://via.placeholder.com/150x80?text=Logo+4", alt: "Logo 4" },
-  { id: 5, image: "https://via.placeholder.com/150x80?text=Logo+5", alt: "Logo 5" },
-  { id: 6, image: "https://via.placeholder.com/150x80?text=Logo+6", alt: "Logo 6" },
 ];
 
 const VISIBLE_COUNT = 8; 

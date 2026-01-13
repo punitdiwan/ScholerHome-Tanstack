@@ -41,7 +41,7 @@ function RouteComponent() {
     <>
       <ImageTitleSection
         title="News Feed"
-        imageUrl="/images/facilities-banner.jpg"
+        imageUrl="/public/placholder/image_header_placeholder.jpg"
       />
 
       <div className="p-6">

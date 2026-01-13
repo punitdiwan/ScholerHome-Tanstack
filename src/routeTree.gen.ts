@@ -18,6 +18,7 @@ import { Route as HolidaysRouteImport } from './routes/holidays'
 import { Route as GoogleStreetViewRouteImport } from './routes/googleStreetView'
 import { Route as GalleryRouteImport } from './routes/gallery'
 import { Route as FacilitiesRouteImport } from './routes/facilities'
+import { Route as EventDetailsRouteImport } from './routes/eventDetails'
 import { Route as DirectorRouteImport } from './routes/director'
 import { Route as ContactUsRouteImport } from './routes/contactUs'
 import { Route as CoCurricularActivitiesRouteImport } from './routes/co-curricular-activities'
@@ -77,6 +78,11 @@ const GalleryRoute = GalleryRouteImport.update({
 const FacilitiesRoute = FacilitiesRouteImport.update({
   id: '/facilities',
   path: '/facilities',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const EventDetailsRoute = EventDetailsRouteImport.update({
+  id: '/eventDetails',
+  path: '/eventDetails',
   getParentRoute: () => rootRouteImport,
 } as any)
 const DirectorRoute = DirectorRouteImport.update({
@@ -164,6 +170,7 @@ export interface FileRoutesByFullPath {
   '/co-curricular-activities': typeof CoCurricularActivitiesRoute
   '/contactUs': typeof ContactUsRoute
   '/director': typeof DirectorRoute
+  '/eventDetails': typeof EventDetailsRoute
   '/facilities': typeof FacilitiesRoute
   '/gallery': typeof GalleryRoute
   '/googleStreetView': typeof GoogleStreetViewRoute
@@ -190,6 +197,7 @@ export interface FileRoutesByTo {
   '/co-curricular-activities': typeof CoCurricularActivitiesRoute
   '/contactUs': typeof ContactUsRoute
   '/director': typeof DirectorRoute
+  '/eventDetails': typeof EventDetailsRoute
   '/facilities': typeof FacilitiesRoute
   '/gallery': typeof GalleryRoute
   '/googleStreetView': typeof GoogleStreetViewRoute
@@ -217,6 +225,7 @@ export interface FileRoutesById {
   '/co-curricular-activities': typeof CoCurricularActivitiesRoute
   '/contactUs': typeof ContactUsRoute
   '/director': typeof DirectorRoute
+  '/eventDetails': typeof EventDetailsRoute
   '/facilities': typeof FacilitiesRoute
   '/gallery': typeof GalleryRoute
   '/googleStreetView': typeof GoogleStreetViewRoute
@@ -245,6 +254,7 @@ export interface FileRouteTypes {
     | '/co-curricular-activities'
     | '/contactUs'
     | '/director'
+    | '/eventDetails'
     | '/facilities'
     | '/gallery'
     | '/googleStreetView'
@@ -271,6 +281,7 @@ export interface FileRouteTypes {
     | '/co-curricular-activities'
     | '/contactUs'
     | '/director'
+    | '/eventDetails'
     | '/facilities'
     | '/gallery'
     | '/googleStreetView'
@@ -297,6 +308,7 @@ export interface FileRouteTypes {
     | '/co-curricular-activities'
     | '/contactUs'
     | '/director'
+    | '/eventDetails'
     | '/facilities'
     | '/gallery'
     | '/googleStreetView'
@@ -324,6 +336,7 @@ export interface RootRouteChildren {
   CoCurricularActivitiesRoute: typeof CoCurricularActivitiesRoute
   ContactUsRoute: typeof ContactUsRoute
   DirectorRoute: typeof DirectorRoute
+  EventDetailsRoute: typeof EventDetailsRoute
   FacilitiesRoute: typeof FacilitiesRoute
   GalleryRoute: typeof GalleryRoute
   GoogleStreetViewRoute: typeof GoogleStreetViewRoute
@@ -405,6 +418,13 @@ declare module '@tanstack/react-router' {
       path: '/facilities'
       fullPath: '/facilities'
       preLoaderRoute: typeof FacilitiesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/eventDetails': {
+      id: '/eventDetails'
+      path: '/eventDetails'
+      fullPath: '/eventDetails'
+      preLoaderRoute: typeof EventDetailsRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/director': {
@@ -524,6 +544,7 @@ const rootRouteChildren: RootRouteChildren = {
   CoCurricularActivitiesRoute: CoCurricularActivitiesRoute,
   ContactUsRoute: ContactUsRoute,
   DirectorRoute: DirectorRoute,
+  EventDetailsRoute: EventDetailsRoute,
   FacilitiesRoute: FacilitiesRoute,
   GalleryRoute: GalleryRoute,
   GoogleStreetViewRoute: GoogleStreetViewRoute,

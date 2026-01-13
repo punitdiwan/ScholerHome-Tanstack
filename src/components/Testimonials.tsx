@@ -12,7 +12,7 @@ interface Testimonial {
 const testimonials: Testimonial[] = [
   {
     id: 1,
-    image: "/accademic/school-cone.jpg",
+    image: "/public/placholder/testimonila_placeholder.jpg",
     description:
       "The school has provided an excellent learning environment for my child. The teachers are supportive, caring, and truly dedicated to student success.",
     name: "Rohit Sharma",
@@ -28,7 +28,7 @@ const testimonials: Testimonial[] = [
   },
   {
     id: 3,
-    image: "/accademic/book.jpg",
+    image: "/public/placholder/testimonila_placeholder.jpg",
     description:
       "The school's values and discipline have positively impacted my ward. Communication with parents is transparent and timely.",
     name: "Amit Patel",

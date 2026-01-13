@@ -1,4 +1,4 @@
-import {  useState } from 'react'
+import { useState } from 'react'
 import { Link } from '@tanstack/react-router'
 import {
   ChevronDown,
@@ -17,11 +17,12 @@ import {
   Trophy,
   BarChart3,
   ClipboardCheck,
+  X,
 } from 'lucide-react'
 
-export default function Sidebar({isOpen,onClose}:{
-  isOpen:boolean,
-  onClose:() => void;
+export default function Sidebar({ isOpen, onClose }: {
+  isOpen: boolean,
+  onClose: () => void;
 }) {
 
   const [expandedSections, setExpandedSections] = useState<Record<string, boolean>>({
@@ -58,9 +59,9 @@ export default function Sidebar({isOpen,onClose}:{
       ]
     },
     {
-      name:'Academics',
-      href:"#",
-      icon:School,
+      name: 'Academics',
+      href: "#",
+      icon: School,
       section: 'academic',
       children: [
         { name: 'Co-Curricular Activities', href: '/co-curricular-activities', icon: Activity },
@@ -68,20 +69,20 @@ export default function Sidebar({isOpen,onClose}:{
       ]
     },
     {
-      name:'Facilities',
-      href:"/facilities",
-      icon:Building2,
-      section:null
-    },{
-      name:'Gallery',
-      href:"/gallery",
-      icon:Image,
-      section:null
+      name: 'Facilities',
+      href: "/facilities",
+      icon: Building2,
+      section: null
+    }, {
+      name: 'Gallery',
+      href: "/gallery",
+      icon: Image,
+      section: null
     },
     {
-      name:'Results',
-      href:"/results",
-      icon:BarChart3,
+      name: 'Results',
+      href: "/results",
+      icon: BarChart3,
       section: null,
     },
     {
@@ -133,7 +134,7 @@ export default function Sidebar({isOpen,onClose}:{
               <ChevronRight className="w-4 h-4 text-yellow-200 group-hover:text-yellow-100 transition-transform duration-200" />
             )}
           </button>
-          
+
           {expandedSections[item.section!] && (
             <div className="ml-4 mt-1 space-y-1">
               {item.children!.map((child, index) => (
@@ -198,15 +199,21 @@ export default function Sidebar({isOpen,onClose}:{
 
       {/* Sidebar */}
       <aside
-        className={`fixed top-0 left-0 h-full w-80 bg-white text-black shadow-2xl z-50 transform transition-transform duration-300 ease-in-out flex flex-col ${
-          isOpen ? 'translate-x-0' : '-translate-x-full'
-        }`}
+        className={`fixed top-0 left-0 h-full w-80 bg-white text-black shadow-2xl z-50 transform transition-transform duration-300 ease-in-out flex flex-col ${isOpen ? 'translate-x-0' : '-translate-x-full'
+          }`}
       >
         {/* Sidebar Header */}
         <div className="flex items-center justify-between p-6 border-b border-blue-500/50">
           <div className="flex items-center gap-3">
             <div className="w-10 h-10 bg-gray-200 rounded-lg flex items-center justify-center">
-              <GraduationCap className="w-6 h-6 text-primary" />
+              {/* <GraduationCap className="w-6 h-6 text-primary" /> */}
+              <Link to="/" className="block">
+                <img
+                  src="/Header_Logo.png"
+                  alt="scholar logo"
+                  className=" w-20 sm:w-22 md:w-24 lg:w-25  h-auto object-contain self-start"
+                />
+              </Link>
             </div>
             <div>
               <h2 className="text-xl text-primary font-bold ">Scholar Homes </h2>
@@ -215,12 +222,10 @@ export default function Sidebar({isOpen,onClose}:{
           </div>
           <button
             onClick={onClose}
-            className="p-2 hover:bg-blue-600/30 rounded-lg transition-colors"
+            className="p-2 bg-yellow-400 hover:bg-black hover:text-white cursor-pointer rounded-lg transition-colors"
             aria-label="Close menu"
           >
-            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-            </svg>
+            <X />
           </button>
         </div>
 

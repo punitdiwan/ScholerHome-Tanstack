@@ -71,7 +71,7 @@ function RouteComponent() {
     <>
       <ImageTitleSection
         title="Results"
-        imageUrl="/images/facilities-banner.jpg"
+        imageUrl="/public/placholder/image_header_placeholder.jpg"
       />
       <section className="px-10 py-12 bg-gray-50">
         <h2 className="text-3xl font-abhaya text-secondary mb-2">
