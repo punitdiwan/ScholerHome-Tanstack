@@ -6,13 +6,13 @@ interface Slide {
 }
 
 const slides: Slide[] = [
-  { id: 4, image:"/public/placholder/Slider_placeholder.jpg"},
+  { id: 4, image:"/placholder/Slider_placeholder.jpg"},
   { id: 1, image: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b" },
-  { id: 5, image:"/public/placholder/Slider_placeholder.jpg"},
+  { id: 5, image:"/placholder/Slider_placeholder.jpg"},
   { id: 2, image: "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f" },
-  { id: 6, image:"/public/placholder/Slider_placeholder.jpg"},
+  { id: 6, image:"/placholder/Slider_placeholder.jpg"},
   { id: 3, image: "https://images.unsplash.com/photo-1509062522246-3755977927d7" },
-  { id: 7, image:"/public/placholder/Slider_placeholder.jpg"},
+  { id: 7, image:"/placholder/Slider_placeholder.jpg"},
 ];
 
 const ImageSlider: FC = () => {

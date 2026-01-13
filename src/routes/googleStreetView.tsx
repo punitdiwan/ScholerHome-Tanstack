@@ -11,7 +11,7 @@ function RouteComponent() {
     <>
       <ImageTitleSection
         title="Google Street View"
-        imageUrl="/public/placholder/image_header_placeholder.jpg"
+        imageUrl="/placholder/image_header_placeholder.jpg"
       />
 
       <div className="px-10 py-8  text-secondary space-y-12 ">
@@ -25,7 +25,7 @@ function RouteComponent() {
             <UnderLine/>
             <div className="overflow-hidden ">
               <img
-                src="/public/campus_img2.jpg"
+                src="/campus_img2.jpg"
                 alt="School Map"
                 className="w-full h-auto object-cover"
               />
@@ -88,7 +88,7 @@ function RouteComponent() {
           {/* Gallery Item */}
           <div className="relative group overflow-hidden rounded-xl shadow-lg">
             <img
-              src="/public/placholder/googleView_placeholder.jpg"
+              src="/placholder/googleView_placeholder.jpg"
               alt="Academic Block"
               className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
             />
@@ -102,7 +102,7 @@ function RouteComponent() {
           {/* Gallery Item */}
           <div className="relative group overflow-hidden rounded-xl shadow-lg">
             <img
-              src="/public/placholder/googleView_placeholder.jpg"
+              src="/placholder/googleView_placeholder.jpg"
               alt="Indoor Sports Complex"
               className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
             />
@@ -116,7 +116,7 @@ function RouteComponent() {
           {/* Gallery Item */}
           <div className="relative group overflow-hidden rounded-xl shadow-lg">
             <img
-              src="/public/placholder/googleView_placeholder.jpg"
+              src="/placholder/googleView_placeholder.jpg"
               alt="Swimming Pool"
               className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
             />
@@ -130,7 +130,7 @@ function RouteComponent() {
           {/* Gallery Item */}
           <div className="relative group overflow-hidden rounded-xl shadow-lg">
             <img
-              src="/public/placholder/googleView_placeholder.jpg"
+              src="/placholder/googleView_placeholder.jpg"
               alt="Playground"
               className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
             />
@@ -144,7 +144,7 @@ function RouteComponent() {
           {/* Gallery Item */}
           <div className="relative group overflow-hidden rounded-xl shadow-lg">
             <img
-              src="/public/placholder/googleView_placeholder.jpg"
+              src="/placholder/googleView_placeholder.jpg"
               alt="Library & Labs"
               className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
             />
@@ -158,7 +158,7 @@ function RouteComponent() {
           {/* Gallery Item */}
           <div className="relative group overflow-hidden rounded-xl shadow-lg">
             <img
-              src="/public/placholder/googleView_placeholder.jpg"
+              src="/placholder/googleView_placeholder.jpg"
               alt="Hostels"
               className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
             />

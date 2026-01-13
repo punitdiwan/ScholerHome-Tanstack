@@ -14,7 +14,7 @@ const academicCards: AcademicCard[] = [
     id: 1,
     title: "Aadhar",
     subtitle: "Pre-Primary",
-    image: "/public/placholder/Academic_st_place.jpg",
+    image: "/placholder/Academic_st_place.jpg",
   },
   {
     id: 2,
@@ -26,7 +26,7 @@ const academicCards: AcademicCard[] = [
     id: 3,
     title: "Sopaan",
     subtitle: "Middle School",
-    image: "/public/placholder/Academic_st_place.jpg",
+    image: "/placholder/Academic_st_place.jpg",
   },
   {
     id: 4,

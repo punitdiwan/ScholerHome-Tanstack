@@ -37,7 +37,7 @@ function RouteComponent() {
     <>
       <ImageTitleSection
         title="Upcoming Event"
-        imageUrl="/public/placholder/image_header_placeholder.jpg"
+        imageUrl="/placholder/image_header_placeholder.jpg"
       />
 
       <div className="p-6">
