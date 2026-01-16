@@ -1,6 +1,6 @@
 
 
-import React, { useState, useEffect } from "react";
+import  { useState, useEffect } from "react";
 import { FaArrowUp } from "react-icons/fa";
 
 export const ScrollToTopButton = () => {
@@ -24,7 +24,7 @@ export const ScrollToTopButton = () => {
       {isVisible && (
         <button
           onClick={scrollToTop}
-          className="fixed bottom-8 right-8 bg-[#ffae00] hover:bg-yellow-600 text-white p-4 rounded-full shadow-lg cursor-pointer transition-colors duration-300 z-50"
+          className="fixed bottom-8 right-8 bg-[#87CEEB] hover:bg-blue-600 text-white p-4 rounded-full shadow-lg cursor-pointer transition-colors duration-300 z-50"
           aria-label="Scroll to top"
         >
           <FaArrowUp size={20} />
