@@ -13,7 +13,7 @@ function RouteComponent() {
     <>
       <ImageTitleSection
         title="Beyond Academics"
-        imageUrl="/placholder/image_header_placeholder.jpg"
+        imageUrl="home7.png"
       />
       <section className="px-8 md:px-10 py-8 space-y-12 text-secondary">
 
@@ -30,7 +30,7 @@ function RouteComponent() {
         {/* ===== Row 2: Two Images ===== */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
           <img
-            src="/placholder/beyond_accademic_first_place.jpg"
+            src="/gameAndSports/22.jpeg"
             alt="Games 1"
             className="w-full h-130 object-cover rounded-lg shadow-md"
           />
@@ -63,7 +63,7 @@ function RouteComponent() {
             className="w-full h-100 object-cover rounded-lg shadow-md"
           />
           <img
-            src="/placholder/beyond_accademic_longHeight_place.jpg"
+            src="/gameAndSports/23.jpeg"
             alt="Course 3"
             className="w-full h-100 object-cover rounded-lg shadow-md"
           />
@@ -94,12 +94,12 @@ function RouteComponent() {
           <img
             src="/gameAndSports/game&sports2.jpeg"
             alt="Playfield 1"
-            className="w-full h-auto object-cover rounded-lg shadow-md"
+            className="w-full h-100 object-cover rounded-lg shadow-md"
           />
           <img
-            src="/placholder/beyond_accademic_secondLast_place.jpg"
+            src="public/win.jpeg"
             alt="Playfield 2"
-            className="w-full h-auto object-cover rounded-lg shadow-md"
+            className="w-full h-100 object-cover rounded-lg shadow-md"
           />
         </div>
 
@@ -135,7 +135,7 @@ function RouteComponent() {
             className="w-full h-80 object-cover rounded-lg shadow-md"
           />
           <img
-            src="/placholder/beyond_accademic_last_place.jpg"
+            src="public/interh.jpg"
             alt="Inter-House 2"
             className="w-full h-80 object-cover rounded-lg shadow-md"
           />

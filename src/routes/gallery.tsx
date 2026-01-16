@@ -102,7 +102,7 @@ function GalleryPage() {
     <>
       <ImageTitleSection
         title="Gallery"
-        imageUrl="/slider1.jpeg"
+        imageUrl="home7.png"
       />
 
       <div className="flex gap-6 px-10 py-8">

@@ -11,7 +11,7 @@ function RouteComponent() {
     <>
       <ImageTitleSection
         title="Google Street View"
-        imageUrl="/placholder/image_header_placeholder.jpg"
+        imageUrl="home7.png"
       />
 
       <div className="px-10 py-8  text-secondary space-y-12 ">
@@ -88,7 +88,7 @@ function RouteComponent() {
           {/* Gallery Item */}
           <div className="relative group overflow-hidden rounded-xl shadow-lg">
             <img
-              src="/placholder/googleView_placeholder.jpg"
+              src="acblock.jpg"
               alt="Academic Block"
               className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
             />
@@ -102,7 +102,7 @@ function RouteComponent() {
           {/* Gallery Item */}
           <div className="relative group overflow-hidden rounded-xl shadow-lg">
             <img
-              src="/placholder/googleView_placeholder.jpg"
+              src="indorgam.jpg"
               alt="Indoor Sports Complex"
               className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
             />
@@ -116,7 +116,7 @@ function RouteComponent() {
           {/* Gallery Item */}
           <div className="relative group overflow-hidden rounded-xl shadow-lg">
             <img
-              src="/placholder/googleView_placeholder.jpg"
+              src="pool.jpg"
               alt="Swimming Pool"
               className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
             />
@@ -130,7 +130,7 @@ function RouteComponent() {
           {/* Gallery Item */}
           <div className="relative group overflow-hidden rounded-xl shadow-lg">
             <img
-              src="/placholder/googleView_placeholder.jpg"
+              src="grd.jpg"
               alt="Playground"
               className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
             />
@@ -144,7 +144,7 @@ function RouteComponent() {
           {/* Gallery Item */}
           <div className="relative group overflow-hidden rounded-xl shadow-lg">
             <img
-              src="/placholder/googleView_placeholder.jpg"
+              src="lab.jpg"
               alt="Library & Labs"
               className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
             />
@@ -158,7 +158,7 @@ function RouteComponent() {
           {/* Gallery Item */}
           <div className="relative group overflow-hidden rounded-xl shadow-lg">
             <img
-              src="/placholder/googleView_placeholder.jpg"
+              src="hostel.jpg"
               alt="Hostels"
               className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
             />

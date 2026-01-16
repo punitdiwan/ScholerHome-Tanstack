@@ -11,7 +11,7 @@ export const getGalleryData = createServerFn({
           id: "sports-day",
           title: "Annual Sports Day",
           images: [
-            "https://picsum.photos/1200/800?random=11",
+            "/gameAndSports/game&sports.jpeg",
             "https://picsum.photos/1200/800?random=12",
             "https://picsum.photos/1200/800?random=13"
           ]
@@ -20,8 +20,8 @@ export const getGalleryData = createServerFn({
           id: "independence-day",
           title: "Independence Day",
           images: [
-            "https://picsum.photos/1200/800?random=14",
-            "https://picsum.photos/1200/800?random=15"
+            "/ind1.jpg",
+            "/ind2.jpg"
           ]
         }
       ]
@@ -33,18 +33,18 @@ export const getGalleryData = createServerFn({
           id: "annual-function",
           title: "Annual Function",
           images: [
-            "https://picsum.photos/1200/800?random=21",
-            "https://picsum.photos/1200/800?random=22",
-            "https://picsum.photos/1200/800?random=23",
-            "https://picsum.photos/1200/800?random=24"
+            "/ann1.jpg",
+            "/ann2.jpg",
+            "/ann3.jpg",
+            "/ann4.jpg"
           ]
         },
         {
           id: "science-exhibition",
           title: "Science Exhibition",
           images: [
-            "https://picsum.photos/1200/800?random=25",
-            "https://picsum.photos/1200/800?random=26"
+            "gameAndSports/game&sports2.jpeg",
+            "gameAndSports/game&sports3.jpeg"
           ]
         }
       ]
@@ -56,8 +56,8 @@ export const getGalleryData = createServerFn({
           id: "yoga-day",
           title: "Yoga Day",
           images: [
-            "https://picsum.photos/1200/800?random=31",
-            "https://picsum.photos/1200/800?random=32"
+            "/yoga1.jpg",
+            "/yoga2.jpeg"
           ]
         }
       ]

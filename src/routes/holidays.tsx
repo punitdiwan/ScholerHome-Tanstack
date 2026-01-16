@@ -17,7 +17,7 @@ function RouteComponent() {
     <>
       <ImageTitleSection
         title="Holidays"
-        imageUrl="/placholder/image_header_placeholder.jpg"
+        imageUrl="home6.png"
       />
       <div className="px-10 py-8 text-secondary">
 

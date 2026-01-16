@@ -4,21 +4,21 @@ import UnderLine from "./underLine";
 
 const images = {
   row1: [
-    { src: "/placholder/LifeAt_placholder.jpg", title: "Campus Life" },
-    { src: "/placholder/LifeAt_placholder.jpg", title: "Classroom Learning" },
-    { src: "/placholder/LifeAt_placholder.jpg", title: "Sports Activities" },
-    { src: "/placholder/LifeAt_placholder.jpg", title: "Creative Arts" },
+    { src: "life.jpeg", title: "Campus Life" },
+    { src: "classroom.jpg", title: "Classroom Learning" },
+    { src: "sanskaar-i41.jpg", title: "Sports Activities" },
+    { src: "creative.jpg", title: "Creative Arts" },
   ],
   row2: [
-    { src: "/placholder/LifeAtCenter_Place.jpg", title: "Student Engagement" },
-    { src: "/placholder/LifeAtCenter_place_sec.jpg", title: "Cultural Programs" },
-    { src: "/placholder/LifeAtCenter_place_sec.jpg", title: "Leadership Activities" },
+    { src: "engage.jpg", title: "Student Engagement" },
+    { src: "culture.jpg", title: "Cultural Programs" },
+    { src: "leader.png", title: "Leadership Activities" },
   ],
   row3: [
-    { src: "/placholder/LifeAt_placholder.jpg", title: "Laboratory Sessions" },
-    { src: "/placholder/LifeAt_placholder.jpg", title: "Library & Reading" },
-    { src: "/placholder/LifeAt_placholder.jpg", title: "School Events" },
-    { src: "/placholder/LifeAt_placholder.jpg", title: "Outdoor Learning" },
+    { src: "facilities/labro.jpeg", title: "Laboratory Sessions" },
+    { src: "facilities/2.jpeg", title: "Library & Reading" },
+    { src: "scl.jpg", title: "School Events" },
+    { src: "outdor.jpg", title: "Outdoor Learning" },
   ],
 };
 

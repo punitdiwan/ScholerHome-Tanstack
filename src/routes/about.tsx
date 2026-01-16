@@ -11,7 +11,7 @@ function RouteComponent() {
     <>
       <ImageTitleSection
         title="Core values"
-        imageUrl="/placholder/image_header_placeholder.jpg"
+        imageUrl="public/home6.png"
       />
       <div className='px-10 py-8'>
         <div className="flex flex-col md:flex-row items-center border-b border-gray-200 pb-6 mb-4">
@@ -35,7 +35,7 @@ function RouteComponent() {
           {/* Right Image Section */}
           <div className="md:w-1/3 ">
             <img
-              src="/placholder/about_place.jpg"
+              src="home7.png"
               alt="scholar homes School"
               className="rounded-lg shadow-lg max-w-full"
             />

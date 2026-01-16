@@ -8,11 +8,11 @@ interface Logo {
 }
 
 const logos: Logo[] = [
-  { id: 4, image: "/placholder/aflliaction_placeholder.jpg", alt: "Logo 4" },
-  { id: 1, image: "/Affiliations/chevrolet.jpg", alt: "Logo 1" },
-  { id: 5, image: "/placholder/aflliaction_placeholder.jpg", alt: "Logo 5" },
+  { id: 4, image: "/Affiliations/chevrolet.jpg", alt: "Logo 4" },
+  { id: 1, image: "/Affiliations/ford-mustang.jpg", alt: "Logo 1" },
+  { id: 5, image: "/Affiliations/porsche.jpg", alt: "Logo 5" },
   { id: 2, image: "/Affiliations/ford-mustang.jpg", alt: "Logo 2" },
-  { id: 6, image: "/placholder/aflliaction_placeholder.jpg", alt: "Logo 6" },
+  { id: 6, image: "/Affiliations/chevrolet.jpg", alt: "Logo 6" },
   { id: 3, image: "/Affiliations/porsche.jpg", alt: "Logo 3" },
 ];
 
