@@ -200,12 +200,12 @@ export const Footer: React.FC = () => {
             </div>
 
             {/* Second Row */}
-            <div className="bg-black  border-t border-gray-700 mt-4 py-4 text-center text-gray-400 text-sm flex flex-col md:flex-row md:justify-between items-center px-4 gap-2">
+            <div className="bg-black  border-t border-gray-700 mt-4 py-4 text-center text-white text-sm flex flex-col md:flex-row md:justify-between items-center px-4 gap-2">
                 <p>©2025. All rights reserved.</p>
                 <div className="flex gap-4 flex-wrap justify-center">
-                    <a href="#" className="hover:text-gray-100">Disclaimer</a>
-                    <a href="#" className="hover:text-gray-100">Privacy Policy</a>
-                    <span className="flex items-center">Powered by <IoHeart color="red" size={20} className="mx-1"/> <a href="https://maitretech.com/" target="_blank" rel="noopener noreferrer" className="hover:text-gray-100">Matritech Solutions</a></span>
+                    <a href="#" className=" hover:text-white/80">Disclaimer</a>
+                    <a href="#" className=" hover:text-white/80">Privacy Policy</a>
+                    <span className="flex items-center">Powered by <IoHeart color="red" size={20} className="mx-1"/> <a href="https://maitretech.com/" target="_blank" rel="noopener noreferrer" className=" hover:text-yellow-500">Matritech Solutions</a></span>
                 </div>
             </div>
         </footer>
