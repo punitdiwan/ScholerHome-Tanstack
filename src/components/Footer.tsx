@@ -70,7 +70,7 @@ export const Footer: React.FC = () => {
     }, []);
 
     return (
-        <footer className="bg-secondary  text-white">
+        <footer className="bg-school-primary  text-white">
             {/* First Row */}
             <div className="px-8 py-6 flex flex-col md:flex-row  gap-8">
 

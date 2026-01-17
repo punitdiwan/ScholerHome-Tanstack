@@ -9,8 +9,8 @@ export default function Header() {
   return (
     <>
       <header className="relative flex items-start h-24 px-2 sm:px-3 md:px-4 
-                   border-t-2 border-amber-500 
-                   bg-gray-100 text-black shadow-lg overflow-y-visible">
+                   border-t-2 border-white 
+                   bg-school-primary  text-white shadow-lg overflow-y-visible">
         {/* Left Logo */}
         <div className="flex h-full relative z-50">
           <Link to="/" className="block">
@@ -26,7 +26,7 @@ export default function Header() {
           <h1 className="text-xl md:text-4xl lg:text-5xl font-abhaya whitespace-nowrap capitaliz tracking-[4px]">
             The Scholar Homes School
           </h1>
-          <p className='mt-2 text-sm lg:text-md text-[#535353] '>
+          <p className='mt-2 text-sm lg:text-md text-gray-100 '>
           Address E-2 arera colony
           </p>
         </div>
