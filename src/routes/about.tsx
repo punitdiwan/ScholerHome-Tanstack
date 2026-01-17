@@ -92,7 +92,7 @@ function RouteComponent() {
 
             {/* Left Content (2/3) */}
             <div className="md:w-1/1">
-              <h2 className="text-3xl font-abhaya text-secondary md:text-4xl  mb-2">
+              <h2 className="text-3xl font-abhaya text-school-primary  md:text-4xl  mb-2">
                 Core Values
               </h2>
               <UnderLine />
@@ -121,7 +121,7 @@ function RouteComponent() {
 
             {/* Child Centric */}
             <div className=''>
-              <h3 className="text-2xl font-abhaya text-secondary  mb-2">
+              <h3 className="text-2xl font-abhaya text-school-primary   mb-2">
                 Child Centric
               </h3>
               <UnderLine />
@@ -136,7 +136,7 @@ function RouteComponent() {
 
             {/* Innovation */}
             <div>
-              <h3 className="text-2xl font-abhaya text-secondary  mb-2">
+              <h3 className="text-2xl font-abhayatext-school-primary   mb-2">
                 Innovation
               </h3>
               <UnderLine />
@@ -151,7 +151,7 @@ function RouteComponent() {
 
             {/* Mutual Respect */}
             <div>
-              <h3 className="text-2xl font-abhaya text-secondary mb-2">
+              <h3 className="text-2xl font-abhaya text-school-primary  mb-2">
                 Mutual Respect
               </h3>
               <UnderLine />
@@ -170,7 +170,7 @@ function RouteComponent() {
         <section className="p-6 border-t  border-gray-200 pt-10 mt-6">
 
           {/* Title */}
-          <h2 className="text-3xl font-abhaya text-secondary md:text-4xl  mb-2">
+          <h2 className="text-3xl font-abhaya text-school-primary  md:text-4xl  mb-2">
             Commitment to Excellence
           </h2>
           <UnderLine />

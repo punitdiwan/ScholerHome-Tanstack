@@ -12,8 +12,8 @@ export const getGalleryData = createServerFn({
           title: "Annual Sports Day",
           images: [
             "/gameAndSports/game&sports.jpeg",
-            "https://picsum.photos/1200/800?random=12",
-            "https://picsum.photos/1200/800?random=13"
+            "/gameAndSports/22.jpeg",
+            "/public/interh.jpg"
           ]
         },
         {

@@ -123,15 +123,15 @@ export default function Sidebar({ isOpen, onClose }: {
             className="w-full flex items-center justify-between p-3 rounded-lg hover:bg-blue-600/20 transition-all duration-200 group"
           >
             <div className="flex items-center gap-3">
-              <item.icon className="w-5 h-5 text-blue-400" />
+              <item.icon className="w-5 h-5 text-school-primary" />
               <span className=" font-medium group-hover:text-blue-600">
                 {item.name}
               </span>
             </div>
             {expandedSections[item.section!] ? (
-              <ChevronDown className="w-4 h-4 text-blue-200 group-hover:text-blue-100 transition-transform duration-200" />
+              <ChevronDown className="w-4 h-4 text-school-primary group-hover:text-blue-100 transition-transform duration-200" />
             ) : (
-              <ChevronRight className="w-4 h-4 text-blue-200 group-hover:text-blue-100 transition-transform duration-200" />
+              <ChevronRight className="w-4 h-4 text-school-primary group-hover:text-blue-100 transition-transform duration-200" />
             )}
           </button>
 
@@ -168,7 +168,7 @@ export default function Sidebar({ isOpen, onClose }: {
           className: 'bg-blue-600/30 border-l-2 border-blue-300'
         }}
       >
-        <item.icon className="w-5 h-5 text-blue-400 group-hover:text-blue-500 transition-colors" />
+        <item.icon className="w-5 h-5 text-school-primary group-hover:text-blue-500 transition-colors" />
         <span className=" font-medium group-hover:text-blue-600">
           {item.name}
         </span>
@@ -216,13 +216,13 @@ export default function Sidebar({ isOpen, onClose }: {
               </Link>
             </div>
             <div>
-              <h2 className="text-xl text-primary font-bold ">Scholar Homes </h2>
+              <h2 className="text-xl text-school-primary  font-bold ">Scholar Homes </h2>
               <p className="text-secondary text-sm">Navigation Menu</p>
             </div>
           </div>
           <button
             onClick={onClose}
-            className="p-2 bg-blue-400 hover:bg-black hover:text-white cursor-pointer rounded-lg transition-colors"
+            className="p-2 bg-school-primary hover:bg-school-primary/80 text-white hover:text-white/80 cursor-pointer rounded-lg transition-colors"
             aria-label="Close menu"
           >
             <X />

@@ -11,13 +11,13 @@ const FixedRightWidget = () => {
       {!open && (
         <div
           onClick={() => setOpen(true)}
-          className="fixed z-40 cursor-pointer select-none text-black font-semibold"
+          className="fixed z-40 cursor-pointer select-none text-white font-semibold"
         >
           {/* Desktop */}
           <div
             className="
               hidden md:block
-              bg-[#87CEEB] hover:bg-blue-600
+              bg-school-primary hover:bg-blue-600
               px-2 pb-1
               rounded-tr-lg rounded-br-lg
               [writing-mode:vertical-rl] rotate-180
