@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { FaFacebook, FaInstagram, FaTwitter, FaLinkedin } from "react-icons/fa";
 import { HiMail, HiPhone } from "react-icons/hi";
 import { Link } from "@tanstack/react-router";
-
+import { IoHeart } from "react-icons/io5";
 import { Users, GraduationCap, BookOpen, Trophy } from "lucide-react";
 
 const stats = [
@@ -200,12 +200,12 @@ export const Footer: React.FC = () => {
             </div>
 
             {/* Second Row */}
-            <div className="bg-white border-t border-gray-700 mt-4 py-4 text-center text-gray-400 text-sm flex flex-col md:flex-row md:justify-between items-center px-4 gap-2">
+            <div className="bg-black  border-t border-gray-700 mt-4 py-4 text-center text-gray-400 text-sm flex flex-col md:flex-row md:justify-between items-center px-4 gap-2">
                 <p>©2025. All rights reserved.</p>
                 <div className="flex gap-4 flex-wrap justify-center">
-                    <a href="#" className="hover:text-gray-800">Disclaimer</a>
-                    <a href="#" className="hover:text-gray-800">Privacy Policy</a>
-                    <span>Powered by Matritech Solutions</span>
+                    <a href="#" className="hover:text-gray-100">Disclaimer</a>
+                    <a href="#" className="hover:text-gray-100">Privacy Policy</a>
+                    <span className="flex items-center">Powered by <IoHeart color="red" size={20} className="mx-1"/> <a href="https://maitretech.com/" target="_blank" rel="noopener noreferrer" className="hover:text-gray-100">Matritech Solutions</a></span>
                 </div>
             </div>
         </footer>
