@@ -22,20 +22,22 @@ function RouteComponent() {
           {/* Left: School Map */}
           <div>
             <h2 className="text-2xl font-abhaya mb-2">School Map</h2>
-            <UnderLine/>
-            <div className="overflow-hidden ">
-              <img
-                src="/campus_img2.jpg"
-                alt="School Map"
-                className="w-full h-auto object-cover"
-              />
+            <UnderLine />
+            <div className="overflow-hidden w-full">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3485.2106278232245!2d77.43375177531972!3d23.220058079035883!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjPCsDEzJzEyLjIiTiA3N8KwMjYnMTAuOCJF!5e1!3m2!1sen!2sin!4v1768637992966!5m2!1sen!2sin"
+                className="w-full h-[350px] border-0"
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              ></iframe>
             </div>
+
           </div>
 
           {/* Right: Campus Layout Plan */}
           <div>
             <h2 className="text-2xl font-abhaya mb-2">Campus Layout Plan</h2>
-            <UnderLine/>
+            <UnderLine />
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-10 mt-4">
 
               {/* Column 1 */}
@@ -75,7 +77,7 @@ function RouteComponent() {
         {/* ===== Row 2 ===== */}
         <div className="">
           <h2 className="text-2xl font-abhaya mb-3">Google Streetview</h2>
-          <UnderLine/>
+          <UnderLine />
           <p className=" leading-relaxed my-4">
             Now you can see a <strong>360° view</strong> of the various facilities at the school
             on click of your mouse. Just click on the facility that you wish to view and

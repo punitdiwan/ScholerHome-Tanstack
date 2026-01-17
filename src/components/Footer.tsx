@@ -70,7 +70,7 @@ export const Footer: React.FC = () => {
     }, []);
 
     return (
-        <footer className="bg-school-primary  text-white">
+        <footer className="bg-secondary  text-white">
             {/* First Row */}
             <div className="px-8 py-6 flex flex-col md:flex-row  gap-8">
 
@@ -159,15 +159,14 @@ export const Footer: React.FC = () => {
 
                         {/* Logo */}
                         <img
-                            src="/Header_Logo.png"
+                            src="/Scholar_logo.png"
                             alt="School Logo"
                             className="w-14 h-14 object-contain"
                         />
 
                         {/* Address */}
                         <p className="text-gray-300 text-sm leading-relaxed capitalize">
-                            123, scholar Homes School Road,<br />
-                            Some City, Some State, 123456
+                        Address E-2 arera colony 
                         </p>
                     </div>
 
@@ -189,10 +188,10 @@ export const Footer: React.FC = () => {
                         <div className="flex items-center gap-2">
                             <HiPhone size={18} />
                             <a
-                                href="tel:+911234567890"
+                                href="tel:+91 9755052856"
                                 className="text-gray-300 hover:text-white text-sm"
                             >
-                                +91 1234567890
+                                +91 9755052856
                             </a>
                         </div>
                     </div>

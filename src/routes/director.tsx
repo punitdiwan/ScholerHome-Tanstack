@@ -61,7 +61,7 @@ function RouteComponent() {
             {/* Right Image (1/3) */}
             <div className="md:col-span-1 flex flex-col items-center text-center bg-white rounded-xl p-6">
               <img
-                src="principal.jpg"
+                src="princ.jpeg"
                 alt="Ms. Madhuri Seth"
                 className="w-54 h-64 object-cover rounded-lg mb-4 shadow-xl border-2 border-black p-1"
               />

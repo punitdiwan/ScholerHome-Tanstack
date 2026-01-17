@@ -27,7 +27,7 @@ export default function Header() {
             The Scholar Homes School
           </h1>
           <p className='mt-2 text-sm lg:text-md text-[#535353] '>
-            Promoted by Bhaskar Group and Sharda Devi Charitable Trust
+          Address E-2 arera colony
           </p>
         </div>
 

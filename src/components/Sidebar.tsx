@@ -78,6 +78,7 @@ export default function Sidebar({ isOpen, onClose }: {
       href: "/gallery",
       icon: Image,
       section: null
+      
     },
     {
       name: 'Results',
