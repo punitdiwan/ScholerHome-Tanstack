@@ -78,6 +78,7 @@ export default function Sidebar({ isOpen, onClose }: {
       href: "/gallery",
       icon: Image,
       section: null
+      
     },
     {
       name: 'Results',
@@ -120,18 +121,18 @@ export default function Sidebar({ isOpen, onClose }: {
         <div className="mb-2">
           <button
             onClick={() => toggleSection(item.section!)}
-            className="w-full flex items-center justify-between p-3 rounded-lg hover:bg-yellow-600/20 transition-all duration-200 group"
+            className="w-full flex items-center justify-between p-3 rounded-lg hover:bg-blue-600/20 transition-all duration-200 group"
           >
             <div className="flex items-center gap-3">
-              <item.icon className="w-5 h-5 text-yellow-400" />
-              <span className=" font-medium group-hover:text-yellow-600">
+              <item.icon className="w-5 h-5 text-school-primary" />
+              <span className=" font-medium group-hover:text-blue-600">
                 {item.name}
               </span>
             </div>
             {expandedSections[item.section!] ? (
-              <ChevronDown className="w-4 h-4 text-yellow-200 group-hover:text-yellow-100 transition-transform duration-200" />
+              <ChevronDown className="w-4 h-4 text-school-primary group-hover:text-blue-100 transition-transform duration-200" />
             ) : (
-              <ChevronRight className="w-4 h-4 text-yellow-200 group-hover:text-yellow-100 transition-transform duration-200" />
+              <ChevronRight className="w-4 h-4 text-school-primary group-hover:text-blue-100 transition-transform duration-200" />
             )}
           </button>
 
@@ -142,13 +143,13 @@ export default function Sidebar({ isOpen, onClose }: {
                   key={index}
                   to={child.href}
                   onClick={onClose}
-                  className="flex items-center gap-3 p-2 rounded-lg hover:bg-yellow-600/10 transition-all duration-200 group"
+                  className="flex items-center gap-3 p-2 rounded-lg hover:bg-blue-600/10 transition-all duration-200 group"
                   activeProps={{
                     className: 'bg-blue-600/30 border-l-2 border-blue-300'
                   }}
                 >
-                  <child.icon className="w-4 h-4 text-yellow-400" />
-                  <span className=" text-sm group-hover:text-yellow-600">
+                  <child.icon className="w-4 h-4 text-blue-400" />
+                  <span className=" text-sm group-hover:text-blue-600">
                     {child.name}
                   </span>
                 </Link>
@@ -163,13 +164,13 @@ export default function Sidebar({ isOpen, onClose }: {
       <Link
         to={item.href}
         onClick={onClose}
-        className="flex items-center gap-3 p-3 rounded-lg hover:bg-yellow-600/20 transition-all duration-200 group mb-2"
+        className="flex items-center gap-3 p-3 rounded-lg hover:bg-blue-600/20 transition-all duration-200 group mb-2"
         activeProps={{
           className: 'bg-blue-600/30 border-l-2 border-blue-300'
         }}
       >
-        <item.icon className="w-5 h-5 text-yellow-400 group-hover:text-yellow-500 transition-colors" />
-        <span className=" font-medium group-hover:text-yellow-600">
+        <item.icon className="w-5 h-5 text-school-primary group-hover:text-blue-500 transition-colors" />
+        <span className=" font-medium group-hover:text-blue-600">
           {item.name}
         </span>
       </Link>
@@ -209,20 +210,20 @@ export default function Sidebar({ isOpen, onClose }: {
               {/* <GraduationCap className="w-6 h-6 text-primary" /> */}
               <Link to="/" className="block">
                 <img
-                  src="/Header_Logo.png"
+                  src="Scholar_logo.png"
                   alt="scholar logo"
                   className=" w-20 sm:w-22 md:w-24 lg:w-25  h-auto object-contain self-start"
                 />
               </Link>
             </div>
             <div>
-              <h2 className="text-xl text-primary font-bold ">Scholar Homes </h2>
+              <h2 className="text-xl text-school-primary  font-bold ">Scholar Homes </h2>
               <p className="text-secondary text-sm">Navigation Menu</p>
             </div>
           </div>
           <button
             onClick={onClose}
-            className="p-2 bg-yellow-400 hover:bg-black hover:text-white cursor-pointer rounded-lg transition-colors"
+            className="p-2 bg-school-primary hover:bg-school-primary/80 text-white hover:text-white/80 cursor-pointer rounded-lg transition-colors"
             aria-label="Close menu"
           >
             <X />

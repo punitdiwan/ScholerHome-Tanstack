@@ -6,13 +6,13 @@ interface Slide {
 }
 
 const slides: Slide[] = [
-  { id: 4, image:"/placholder/Slider_placeholder.jpg"},
-  { id: 1, image: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b" },
-  { id: 5, image:"/placholder/Slider_placeholder.jpg"},
+  { id: 4, image:"/home1.jpeg"},
+  { id: 1, image: "/home7.png" },
+  { id: 5, image:"/home3.jpeg"},
   { id: 2, image: "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f" },
-  { id: 6, image:"/placholder/Slider_placeholder.jpg"},
-  { id: 3, image: "https://images.unsplash.com/photo-1509062522246-3755977927d7" },
-  { id: 7, image:"/placholder/Slider_placeholder.jpg"},
+  { id: 6, image:"/home4.jpg"},
+  { id: 3, image: "/home6.png" },
+  { id: 7, image:"/home5.jpeg"},
 ];
 
 const ImageSlider: FC = () => {
@@ -27,7 +27,7 @@ const ImageSlider: FC = () => {
   }, []);
 
   return (
-    <section className="relative w-full h-55 sm:h-80 md:h-112.5 lg:h-125 overflow-hidden">
+    <section className="relative w-full h-100 sm:h-112.5 md:h-125 lg:h-160 overflow-hidden">
       
       {/* Slider Track */}
       <div

@@ -17,7 +17,7 @@ function RouteComponent() {
     <>
       <ImageTitleSection
         title="Facilities"
-        imageUrl="/placholder/image_header_placeholder.jpg"
+        imageUrl="home7.png"
       />
       <section className="px-8 md:px-10 py-8 space-y-12 text-secondary">
 

@@ -6,7 +6,7 @@ export const TrendingSlider: React.FC = () => {
   
 
   return (
-    <section className="p-4 bg-white shadow">
+    <section className="p-4 bg-white ">
       <h1 className="text-2xl font-bold font-abhaya text-secondary mb-2">
         Trending @ Sanskaar
       </h1>

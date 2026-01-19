@@ -10,6 +10,8 @@
 }
 
 @layer utilities {
+  .bg-school-primary { background-color: #162491;}
+  .text-school-primary {color: #162491;}
   .bg-primary { background-color: #007744; }
   .bg-secondary { background-color:#333333 ;}
   .text-primary { color: #007744; }

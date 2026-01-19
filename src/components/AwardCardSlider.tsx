@@ -32,7 +32,7 @@ export const OneCardSlider: React.FC<OneCardSliderProps> = ({
       <div className="max-w-6xl mx-auto">
 
         {/* Slider Area */}
-        <div className="flex flex-col md:flex-row items-center gap-6 p-2 bg-gray-50 rounded-lg shadow-md">
+        <div className="flex flex-col md:flex-row items-center gap-6 p-2  ">
           
           {/* Left: Fixed Logo */}
           <div className="flex-shrink-0 w-20 h-24 md:w-22 md:h-32 flex items-center justify-center">

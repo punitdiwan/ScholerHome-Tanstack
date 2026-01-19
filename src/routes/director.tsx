@@ -11,7 +11,7 @@ function RouteComponent() {
     <>
       <ImageTitleSection
         title="Director"
-        imageUrl="/placholder/image_header_placeholder.jpg"
+        imageUrl="home7.png"
       />
       <div className=" px-10 py-8 text-secondary">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
@@ -61,7 +61,7 @@ function RouteComponent() {
             {/* Right Image (1/3) */}
             <div className="md:col-span-1 flex flex-col items-center text-center bg-white rounded-xl p-6">
               <img
-                src="/placholder/director_pricipal_placeholder.jpg"
+                src="princ.jpeg"
                 alt="Ms. Madhuri Seth"
                 className="w-54 h-64 object-cover rounded-lg mb-4 shadow-xl border-2 border-black p-1"
               />

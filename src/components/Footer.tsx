@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { FaFacebook, FaInstagram, FaTwitter, FaLinkedin } from "react-icons/fa";
 import { HiMail, HiPhone } from "react-icons/hi";
 import { Link } from "@tanstack/react-router";
-
+import { IoHeart } from "react-icons/io5";
 import { Users, GraduationCap, BookOpen, Trophy } from "lucide-react";
 
 const stats = [
@@ -70,7 +70,7 @@ export const Footer: React.FC = () => {
     }, []);
 
     return (
-        <footer className="bg-secondary  text-white">
+        <footer className="bg-school-primary  text-white">
             {/* First Row */}
             <div className="px-8 py-6 flex flex-col md:flex-row  gap-8">
 
@@ -159,15 +159,14 @@ export const Footer: React.FC = () => {
 
                         {/* Logo */}
                         <img
-                            src="/Header_Logo.png"
+                            src="/Scholar_logo.png"
                             alt="School Logo"
                             className="w-14 h-14 object-contain"
                         />
 
                         {/* Address */}
                         <p className="text-gray-300 text-sm leading-relaxed capitalize">
-                            123, scholar Homes School Road,<br />
-                            Some City, Some State, 123456
+                        Address E-2 arera colony 
                         </p>
                     </div>
 
@@ -189,10 +188,10 @@ export const Footer: React.FC = () => {
                         <div className="flex items-center gap-2">
                             <HiPhone size={18} />
                             <a
-                                href="tel:+911234567890"
+                                href="tel:+91 9755052856"
                                 className="text-gray-300 hover:text-white text-sm"
                             >
-                                +91 1234567890
+                                +91 9755052856
                             </a>
                         </div>
                     </div>
@@ -201,12 +200,12 @@ export const Footer: React.FC = () => {
             </div>
 
             {/* Second Row */}
-            <div className="bg-white border-t border-gray-700 mt-4 py-4 text-center text-gray-400 text-sm flex flex-col md:flex-row md:justify-between items-center px-4 gap-2">
+            <div className="bg-black  border-t border-gray-700 mt-4 py-4 text-center text-white text-sm flex flex-col md:flex-row md:justify-between items-center px-4 gap-2">
                 <p>©2025. All rights reserved.</p>
                 <div className="flex gap-4 flex-wrap justify-center">
-                    <a href="#" className="hover:text-gray-800">Disclaimer</a>
-                    <a href="#" className="hover:text-gray-800">Privacy Policy</a>
-                    <span>Powered by Matritech Solutions</span>
+                    <a href="#" className=" hover:text-white/80">Disclaimer</a>
+                    <a href="#" className=" hover:text-white/80">Privacy Policy</a>
+                    <span className="flex items-center">Powered by <IoHeart color="red" size={20} className="mx-1"/> <a href="https://maitretech.com/" target="_blank" rel="noopener noreferrer" className=" hover:text-yellow-500">Matritech Solutions</a></span>
                 </div>
             </div>
         </footer>
