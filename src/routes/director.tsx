@@ -62,10 +62,10 @@ function RouteComponent() {
             <div className="md:col-span-1 flex flex-col items-center text-center bg-white rounded-xl p-6">
               <img
                 src="/newdire.jpeg"
-                alt="Ms. Ajay Seth"
+                alt="Mr. Ajay Seth"
                 className="w-54 h-64 object-cover rounded-lg mb-4 shadow-xl border-2 border-black p-1"
               />
-              <h3 className="text-lg font-bold">Ms. Ajay Seth</h3>
+              <h3 className="text-lg font-bold">Mr. Ajay Seth</h3>
               <p className="text-sm text-gray-600">Director</p>
             </div>
 
