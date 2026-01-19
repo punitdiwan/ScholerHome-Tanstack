@@ -27,7 +27,7 @@ const ImageSlider: FC = () => {
   }, []);
 
   return (
-    <section className="relative w-full h-55 sm:h-80 md:h-112.5 lg:h-125 overflow-hidden">
+    <section className="relative w-full h-100 sm:h-112.5 md:h-125 lg:h-160 overflow-hidden">
       
       {/* Slider Track */}
       <div

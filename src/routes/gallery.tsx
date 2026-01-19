@@ -5,14 +5,14 @@ import Thumbnails from "yet-another-react-lightbox/plugins/thumbnails";
 
 import "yet-another-react-lightbox/styles.css";
 import "yet-another-react-lightbox/plugins/thumbnails.css";
-import { AiOutlineCaretRight } from "react-icons/ai";
+// import { AiOutlineCaretRight } from "react-icons/ai";
 import ImageTitleSection from "@/components/ImageHeader";
 import { getGalleryData } from "@/data/demo.gallery";
 
 interface Activity {
   id: string;
-  title: string;
-  images: string[];
+  // title: string;
+  images: string;
 }
 
 
@@ -86,17 +86,17 @@ export const Route = createFileRoute("/gallery")({
 });
 
 function GalleryPage() {
-  const galleryData = Route.useLoaderData()
-  const [selectedYear, setSelectedYear] = useState(galleryData[0].year);
+  const galleryData = Route.useLoaderData() as Activity[];
+  // const [selectedYear, setSelectedYear] = useState(galleryData[0].year);
   const [lightboxOpen, setLightboxOpen] = useState(false);
-  const [activeImages, setActiveImages] = useState<string[]>([]);
+  const [activeIndex, setActiveIndex] = useState(0);
 
-  const selectedYearData = galleryData.find(
-    (y) => y.year === selectedYear
-  );
+  // const selectedYearData = galleryData.find(
+  //   (y) => y.year === selectedYear
+  // );
 
-  const getPreviewImage = (activity: Activity) =>
-    activity.images[activity.images.length - 1];
+  // const getPreviewImage = (activity: Activity) => 
+  //   activity.images[activity.images.length - 1];
 
   return (
     <>
@@ -105,9 +105,9 @@ function GalleryPage() {
         imageUrl="home7.png"
       />
 
-      <div className="flex gap-6 px-10 py-8">
-        <div className="w-40 relative">
-          {galleryData.map((y) => (
+      {/* <div className="flex gap-6 px-10 py-8"> */}
+      {/* <div className="w-40 relative">
+          {galleryData.map((y:any) => (
             <div key={y.year} className="relative flex items-center">
 
               <button
@@ -131,10 +131,10 @@ function GalleryPage() {
 
             </div>
           ))}
-        </div>
+        </div> */}
 
-        <div className="flex-1 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-          {selectedYearData?.activities.map((activity) => (
+      {/* <div className="flex-1 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+          {selectedYearData?.activities.map((activity:Activity) => (
             <div
               key={activity.id}
               onClick={() => {
@@ -157,18 +157,39 @@ function GalleryPage() {
               </div>
             </div>
           ))}
-        </div>
+        </div> */}
 
-        {lightboxOpen && (
-          <Lightbox
-            open={lightboxOpen}
-            close={() => setLightboxOpen(false)}
-            slides={activeImages.map((img) => ({ src: img }))}
-            plugins={[Thumbnails]}
-            thumbnails={{ width: 100, height: 60 }}
-          />
-        )}
+      <div className="px-10 py-8 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
+        {galleryData.map((item, index) => (
+          <div
+            key={item.id}
+            onClick={() => {
+              setActiveIndex(index);
+              setLightboxOpen(true);
+            }}
+            className="cursor-pointer overflow-hidden rounded-lg shadow-md group"
+          >
+            <img
+              src={item.images}
+              alt="Gallery Image"
+              className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300"
+            />
+          </div>
+        ))}
       </div>
+
+
+      {lightboxOpen && (
+        <Lightbox
+          open={lightboxOpen}
+          close={() => setLightboxOpen(false)}
+          index={activeIndex}
+          slides={galleryData.map((item) => ({ src: item.images }))}
+          plugins={[Thumbnails]}
+          thumbnails={{ width: 100, height: 60 }}
+        />
+      )}
+      {/* </div> */}
     </>
   );
 }
