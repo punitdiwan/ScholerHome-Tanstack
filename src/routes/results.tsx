@@ -19,19 +19,13 @@ type YearWiseToppers = {
 
 const toppersData: YearWiseToppers[] = [
   {
-    year: "2023-24",
+    year: "2025-2026",
     toppers: [
       {
-        id: "1",
-        name: "Aarav Sharma",
-        className: "Class X",
-        image: "https://picsum.photos/300/300?random=1"
-      },
-      {
-        id: "2",
-        name: "Ananya Verma",
-        className: "Class XII",
-        image: "https://picsum.photos/300/300?random=2"
+        id: "cs",
+        name: "COMING SOON",
+        className: "",
+        image: "/comingson.png"
       }
     ]
   },
@@ -39,16 +33,35 @@ const toppersData: YearWiseToppers[] = [
     year: "2024-25",
     toppers: [
       {
-        id: "3",
-        name: "Rohit Mehta",
+        id: "1",
+        name: "Antara savrikar 86 %",
         className: "Class X",
-        image: "https://picsum.photos/300/300?random=3"
+        image: "/10antara.jpeg"
+      },
+      {
+        id: "2",
+        name: "Rudra Tenguria 83.2%",
+        className: "Class X",
+        image: "/rudra.jpeg"
+      },
+      {
+        id: "3",
+        name: "Pavitra Raikwar 83%",
+        className: "Class X",
+        image: "/pavitra.jpeg"
       },
       {
         id: "4",
-        name: "Sneha Kapoor",
+        name: "Sejal Rajak 68%",
         className: "Class XII",
-        image: "https://picsum.photos/300/300?random=4"
+        image: "/12sejal.jpeg"
+      }
+      ,
+      {
+        id: "5",
+        name: "Nikhil shankhwar 65%",
+        className: "Class XII",
+        image: "/12nikhil.jpeg"
       }
     ]
   }
@@ -90,7 +103,7 @@ function RouteComponent() {
                 <img
                   src={topper.image}
                   alt={topper.name}
-                  className="h-56 w-full object-cover"
+                  className="h-90 w-full object-cover"
                 />
 
                 <div className="p-4 text-center">
