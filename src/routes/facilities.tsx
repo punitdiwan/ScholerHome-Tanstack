@@ -77,7 +77,7 @@ function RouteComponent() {
             className="w-full h-70 object-cover rounded-lg shadow-md"
           />
           <img
-            src="/placholder/facilities_classroom_placholder.jpg"
+            src="/win.jpeg"
             alt="Classroom 2"
             className="w-full h-70 object-cover rounded-lg shadow-md"
           />
@@ -109,7 +109,7 @@ function RouteComponent() {
             className="w-full h-60 object-cover rounded-lg shadow-md"
           />
           <img
-            src="/placholder/Libraray_lab_placeholder.jpg"
+            src="/facilities/6.jpeg"
             alt="Classroom 2"
             className="w-full h-60 object-cover rounded-lg shadow-md"
           />
@@ -129,17 +129,17 @@ function RouteComponent() {
         {/* ===== Row 8: Four images ===== */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           <img
-            src="/facilities/3.jpeg"
+            src="/facilities/labro.jpeg"
             alt="Classroom 2"
             className="w-full h-60 object-cover rounded-lg shadow-md"
           />
           <img
-            src="/facilities/4.jpeg"
+            src="/facilities/labo.jpeg"
             alt="Classroom 2"
             className="w-full h-60 object-cover rounded-lg shadow-md"
           />
           <img
-            src="/placholder/Libraray_lab_placeholder.jpg"
+            src="/facilities/labo.jpeg"
             alt="Classroom 2"
             className="w-full h-60 object-cover rounded-lg shadow-md"
           />
