@@ -6,11 +6,11 @@ interface Slide {
 }
 
 const slides: Slide[] = [
-  { id: 4, image:"/home1.jpeg"},
+  { id: 4, image:"/sliderfirst.jpeg"},
   { id: 1, image: "/home7.png" },
   { id: 5, image:"/home3.jpeg"},
   { id: 2, image: "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f" },
-  { id: 6, image:"/home4.jpg"},
+  // { id: 6, image:"/home4.jpg"},
   { id: 3, image: "/home6.png" },
   { id: 7, image:"/home5.jpeg"},
 ];
@@ -39,7 +39,7 @@ const ImageSlider: FC = () => {
             <img
               src={slide.image}
               alt={`Slide ${slide.id}`}
-              className="w-full h-full object-cover"
+              className="w-full h-full "
             />
           </div>
         ))}
